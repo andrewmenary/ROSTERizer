@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  firstname: MyString
+  lastname: MyString
+  nickname: MyString
+  wins: 1
+  ties: 1
+  loses: 1
+  goals: 1
+  assists: 1
+  isactive: false
+  isavailable: false
+
+two:
+  firstname: MyString
+  lastname: MyString
+  nickname: MyString
+  wins: 1
+  ties: 1
+  loses: 1
+  goals: 1
+  assists: 1
+  isactive: false
+  isavailable: false

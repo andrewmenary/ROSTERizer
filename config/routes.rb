@@ -1,4 +1,6 @@
 Rosterizer::Application.routes.draw do
+  resources :players
+
   get "home/index"
 
   # The priority is based upon order of creation:
