@@ -17,8 +17,8 @@ development:
   encoding: unicode
   database: rosterizer_development
   pool: 5
-  username: rails_user
-  password: !!!333Railway
+  username: railsuser2
+  password: Rail333!!!way
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,13 +43,13 @@ test:
   encoding: unicode
   database: rosterizer_test
   pool: 5
-  username: rails_user
-  password: !!!333Railway
+  username: railsuser2
+  password: Rail333!!!way
 
 production:
   adapter: postgresql
   encoding: unicode
   database: rosterizer_production
   pool: 5
-  username: rails_user
-  password: !!!333Railway
+  username: railsuser2
+  password: Rail333!!!way
