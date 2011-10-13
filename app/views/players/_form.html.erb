@@ -12,44 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :firstname %><br />
+    <%= f.label :firstname, 'First Name:' %><br />
     <%= f.text_field :firstname %>
   </div>
   <div class="field">
-    <%= f.label :lastname %><br />
+    <%= f.label :lastname, 'Last Name:' %><br />
     <%= f.text_field :lastname %>
   </div>
   <div class="field">
-    <%= f.label :nickname %><br />
+    <%= f.label :nickname, 'Nickname:' %><br />
     <%= f.text_field :nickname %>
-  </div>
-  <div class="field">
-    <%= f.label :wins %><br />
-    <%= f.number_field :wins %>
-  </div>
-  <div class="field">
-    <%= f.label :ties %><br />
-    <%= f.number_field :ties %>
-  </div>
-  <div class="field">
-    <%= f.label :loses %><br />
-    <%= f.number_field :loses %>
-  </div>
-  <div class="field">
-    <%= f.label :goals %><br />
-    <%= f.number_field :goals %>
-  </div>
-  <div class="field">
-    <%= f.label :assists %><br />
-    <%= f.number_field :assists %>
-  </div>
-  <div class="field">
-    <%= f.label :isactive %><br />
-    <%= f.check_box :isactive %>
-  </div>
-  <div class="field">
-    <%= f.label :isavailable %><br />
-    <%= f.check_box :isavailable %>
   </div>
   <div class="actions">
     <%= f.submit %>

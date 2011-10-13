@@ -2,7 +2,8 @@ class PlayersController < ApplicationController
   # GET /players
   # GET /players.json
   def index
-    @players = Player.all
+    #@players = Player.all
+	@players = Player.order :firstname, :lastname
 
     respond_to do |format|
       format.html # index.html.erb

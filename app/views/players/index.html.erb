@@ -1,17 +1,14 @@
-<h1>Listing players</h1>
+<h1>All Players</h1>
 
 <table>
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Nickname</th>
+    <th>Name</th>
     <th>Wins</th>
     <th>Ties</th>
-    <th>Loses</th>
+    <th>Losses</th>
     <th>Goals</th>
     <th>Assists</th>
-    <th>Isactive</th>
-    <th>Isavailable</th>
+    <th>Is Available</th>
     <th></th>
     <th></th>
     <th></th>
@@ -19,15 +16,12 @@
 
 <% @players.each do |player| %>
   <tr>
-    <td><%= player.firstname %></td>
-    <td><%= player.lastname %></td>
-    <td><%= player.nickname %></td>
+    <td><%= link_to player.fullname, player %></td>
     <td><%= player.wins %></td>
     <td><%= player.ties %></td>
     <td><%= player.loses %></td>
     <td><%= player.goals %></td>
     <td><%= player.assists %></td>
-    <td><%= player.isactive %></td>
     <td><%= player.isavailable %></td>
     <td><%= link_to 'Show', player %></td>
     <td><%= link_to 'Edit', edit_player_path(player) %></td>
