@@ -8,6 +8,7 @@
     <th>Losses</th>
     <th>Goals</th>
     <th>Assists</th>
+    <th>Points</th>
     <th>Is Available</th>
     <th></th>
     <th></th>
@@ -19,9 +20,10 @@
     <td><%= link_to player.fullname, player %></td>
     <td><%= player.wins %></td>
     <td><%= player.ties %></td>
-    <td><%= player.loses %></td>
+    <td><%= player.losses %></td>
     <td><%= player.goals %></td>
     <td><%= player.assists %></td>
+    <td><%= player.points %></td>
     <td><%= player.isavailable %></td>
     <td><%= link_to 'Show', player %></td>
     <td><%= link_to 'Edit', edit_player_path(player) %></td>
