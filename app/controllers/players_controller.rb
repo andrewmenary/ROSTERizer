@@ -11,6 +11,30 @@ class PlayersController < ApplicationController
     end
   end
 
+  # GET /players/availability
+  # GET /players/availability.json
+  def availability
+	self.index
+  end
+  
+  # PUT /players/update_availability
+  # PUT /players/update_availability.json
+  def update_availability
+    for player in Player.all
+	  if params[:player]["#{player.id}"] == "available"
+	    player.isavailable = true
+	  else
+	    player.isavailable = false
+	  end
+	  player.save
+    end
+	
+    respond_to do |format|
+      format.html { redirect_to players_url }
+      format.json { head :ok }
+    end
+  end
+
   # GET /players/1
   # GET /players/1.json
   def show
@@ -81,4 +105,5 @@ class PlayersController < ApplicationController
       format.json { head :ok }
     end
   end
+  
 end
