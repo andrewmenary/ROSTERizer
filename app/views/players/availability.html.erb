@@ -1,0 +1,22 @@
+<h1>Player Availability</h1>
+
+Is this working?
+<%= form_tag({:controller => "players", :action => "update_availability"}, :method => "put") do %>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Is Available?</th>
+  </tr>
+
+  <% @players.each do |player| %>
+  <tr>
+    <td><%= player.fullname %></td>
+    <td><%= check_box_tag "player[#{player.id}]", 'available', player.isavailable %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= submit_tag "Save changes" %>
+<% end %>
