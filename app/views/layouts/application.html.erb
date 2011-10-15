@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rosterizer</title>
+  <title>ROSTERizer</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="header">
+    <span class="sitename">ROSTERizer</span>
+  </div>
 
-<%= yield %>
+  <div id="content">
+    <%= yield %>
+  </div>
 
+  <div id="gobalnav">
+    <a href="/">Home</a>
+  </div>
+
+  <div id="footer">
+    ROSTERizer, produced by <a href="http://androidspeak.wordpress.com/">Andrew W. Menary</a>, 2011<br />
+    Built with <a href="http://rubyonrails.org/">Ruby on Rails</a><br />
+    Hosted on <a href="http://heroku.com/">Heroku</a><br />
+  </div>
 </body>
 </html>

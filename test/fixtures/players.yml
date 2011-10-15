@@ -1,25 +1,193 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  firstname: MyString
-  lastname: MyString
-  nickname: MyString
-  wins: 1
+  firstname: David
+  lastname: Black
+  wins: 3
   ties: 1
-  loses: 1
-  goals: 1
+  losses: 1
+  goals: 0
+  assists: 5
+  isactive: true
+  isavailable: true
+  
+two:
+  firstname: David
+  lastname: Heinemeier Hansson
+  wins: 3
+  ties: 0
+  losses: 2
+  goals: 5
   assists: 1
   isactive: false
   isavailable: false
 
-two:
-  firstname: MyString
-  lastname: MyString
-  nickname: MyString
+three:
+  firstname: Yushihiro
+  lastname: Matsumoto
+  nickname: Matz
+  wins: 3
+  ties: 1
+  losses: 1
+  goals: 4
+  assists: 0
+  isactive: true
+  isavailable: true
+
+four:
+  firstname: Dave
+  lastname: Thomas
+  wins: 2
+  ties: 1
+  losses: 2
+  goals: 2
+  assists: 1
+  isactive: true
+  isavailable: true
+ 
+five:
+  firstname: Andy
+  lastname: Hunt
+  wins: 2
+  ties: 0
+  losses: 3
+  goals: 3
+  assists: 0
+  isactive: true
+  isavailable: true
+
+six:
+  firstname: Keiju
+  lastname: Ishitsuka
+  wins: 2
+  ties: 0
+  losses: 3
+  goals: 1
+  assists: 2
+  isactive: true
+  isavailable: true
+
+seven:
+  firstname: Seki
+  lastname: Masatoshi
   wins: 1
   ties: 1
-  loses: 1
+  losses: 3
+  goals: 3
+  assists: 0
+  isactive: true
+  isavailable: true
+
+eight:
+  firstname: Jeremy
+  lastname: McAnally
+  wins: 1
+  ties: 1
+  losses: 3
+  goals: 1
+  assists: 3
+  isactive: true
+  isavailable: true
+
+nine:
+  firstname: Assaf
+  lastname: Arkin
+  wins: 1
+  ties: 1
+  losses: 3
+  goals: 1
+  assists: 2
+  isactive: true
+  isavailable: true
+
+ten:
+  firstname: Chad
+  lastname: Fowler
+  wins: 0
+  ties: 1
+  losses: 4
+  goals: 2
+  assists: 1
+  isactive: true
+  isavailable: true
+
+eleven:
+  firstname: David
+  lastname: Flanagan
+  wins: 0
+  ties: 1
+  losses: 4
   goals: 1
   assists: 1
-  isactive: false
-  isavailable: false
+  isactive: true
+  isavailable: true
+
+twelve:
+  firstname: Kevin
+  lastname: Baird
+  wins: 0
+  ties: 1
+  losses: 4
+  goals: 0
+  assists: 3
+  isactive: true
+  isavailable: true
+
+thirteen:
+  firstname: Michael
+  lastname: Fitzgerald
+  nickname: Fitz
+  wins: 0
+  ties: 0
+  losses: 5
+  goals: 0
+  assists: 1
+  isactive: true
+  isavailable: true
+
+fourteen:
+  firstname: Peter
+  lastname: Cooper
+  nickname: The Keeper
+  wins: 0
+  ties: 0
+  losses: 5
+  goals: 0
+  assists: 2
+  isactive: true
+  isavailable: true
+
+fifteen:
+  firstname: Hal
+  lastname: Fulton
+  nickname: Fullback
+  wins: 0
+  ties: 0
+  losses: 5
+  goals: 1
+  assists: 0
+  isactive: true
+  isavailable: true
+
+sixteen:
+  firstname: Lucas
+  lastname: Carlson
+  wins: 0
+  ties: 0
+  losses: 5
+  goals: 0
+  assists: 0
+  isactive: true
+  isavailable: true
+
+seventeen:
+  firstname: Leonard
+  lastname: Richardson
+  wins: 0
+  ties: 0
+  losses: 4
+  goals: 0
+  assists: 1
+  isactive: true
+  isavailable: true
+  

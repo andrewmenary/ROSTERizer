@@ -1,0 +1,26 @@
+<h1>All Games</h1>
+
+<% if !@games.empty? %>
+<table>
+  <tr>
+    <th>Game:</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @games.each do |game| %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= game.display_name %></td>
+    <td><%= link_to 'Show', game %></td>
+    <td><%= link_to 'Edit', edit_game_path(game) %></td>
+    <td><%= link_to 'Destroy', game, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<% end %>
+
+<br />
+
+<%= link_to 'New Game', new_game_path %>

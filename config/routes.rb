@@ -1,4 +1,6 @@
 Rosterizer::Application.routes.draw do
+  resources :games
+
   #match 'players/availability' => 'players#availability'
   match 'players/update_availability' => 'players#update_availability', :via => :put
 

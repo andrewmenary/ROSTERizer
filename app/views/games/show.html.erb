@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<fieldset>
+  <legend>Game</legend>
+  <p>
+    <%= label_tag 'date', "Game Time" %>
+    <span class="field">
+      <%= @game.date %>
+    </span>
+  </p>
+  
+  <fieldset>
+    <legend>Home Team</legend>
+    <p>
+      <%= label_tag "home_team_name", "Team Name" %>
+      <span class="field">
+        <%= @home_team.name %>
+      </span>
+    </p>
+    
+    <p>
+      <%= label_tag "players", "Players" %>
+      <% @home_team.players.each do |player| %>
+        <span class="field">
+          <%= player.fullname %><br />
+        </span>
+      <% end %>
+    </p>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Away Team</legend>
+    <p>
+      <%= label_tag "away_team_name", "Team Name" %>
+      <span class="field">
+        <%= @away_team.name %>
+      </span>
+    </p>
+
+    <p>
+      <%= label_tag "players", "Players" %>
+      <% @away_team.players.each do |player| %>
+        <span class="field">
+          <%= player.fullname %><br />
+        </span>
+      <% end %>
+    </p>
+  </fieldset>
+</fieldset>
+
+<fieldset>
+  <%= link_to 'Edit', edit_game_path(@game) %> |
+  <%= link_to 'Back', games_path %>
+</fieldset>

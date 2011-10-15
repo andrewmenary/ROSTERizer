@@ -1,0 +1,34 @@
+  <% if @game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game.errors.count, "error") %> prohibited this game from being saved:</h2>
+
+      <ul>
+      <% @game.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <fieldset>
+    <legend>Game</legend>
+    <div class="field">
+      <%= label_tag 'date', "Game Time" %>
+      <%= datetime_select :game, :date %>
+    </div>
+  
+    <div class="field">
+      <%= label_tag "home_team_name", "Name for Home Team" %>
+      <%= text_field_tag :home_team_name, "#{@home_team.name}" %>
+    </div>
+    <div class="field">
+      <%= label_tag "away_team_name", "Name for Away Team" %>
+      <%= text_field_tag :away_team_name, "#{@away_team.name}" %>
+    </div>
+  
+    <%= label_tag "players", "Choose Players" %>
+    <% @players.each do |player| %>
+      <%= check_box_tag "player[#{player.id}]", 'available', player.isavailable %>
+      <%= "#{player.fullname}" %><br />
+    <% end %>
+  </fieldset>

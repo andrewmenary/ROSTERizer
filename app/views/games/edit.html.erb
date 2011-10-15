@@ -1,0 +1,14 @@
+<h1>Edit Game</h1>
+
+<%= form_for(@game) do |f| %>
+
+<%= render :partial => 'form' %>
+
+  <div class="actions">
+    <fieldset>
+      <%= f.submit %>
+      <%= link_to 'Show', @game %> |
+      <%= link_to 'Back', games_path %>
+    </fieldset>
+  </div>
+<% end %>

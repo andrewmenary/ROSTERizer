@@ -5,3 +5,31 @@
  *= require_self
  *= require_tree . 
 */
+fieldset {
+  width: 30em;
+}
+fieldset fieldset {
+  width: auto;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+label:after {
+  content: ':';
+}
+input {
+  margin-left: 0.5em;
+}
+select {
+  margin-left: 0.5em;
+}
+legend {
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  font-size: larger;
+}
+.field {
+  margin-left: 0.5em;
+}
