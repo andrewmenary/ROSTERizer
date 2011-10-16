@@ -17,14 +17,26 @@
         <%= @home_team.name %>
       </span>
     </p>
-    
+
     <p>
       <%= label_tag "players", "Players" %>
-      <% @home_team.players.each do |player| %>
-        <span class="field">
-          <%= player.fullname %>  (<%= player.points %>)<br />
-        </span>
-      <% end %>
+      <table class="home-team">
+        <tr>
+          <th align="left">Name:</th>
+          <th align="right">Points:</th>
+        </tr>
+        
+        <% @home_team.players.sort_by {|p| p.fullname}.each do |player| %>
+          <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+            <td><%= player.fullname %></td>
+            <td align="right"><%= player.points %></td>
+          </tr>
+        <% end %>
+        <tr class="total">
+          <td>Total:</td>
+          <td align="right"><%= "#{@home_team.players.sum('points')}" %></td>
+        </tr>
+      </table>
     </p>
   </fieldset>
   
@@ -39,11 +51,23 @@
 
     <p>
       <%= label_tag "players", "Players" %>
-      <% @away_team.players.each do |player| %>
-        <span class="field">
-          <%= player.fullname %>  (<%= player.points %>)<br />
-        </span>
-      <% end %>
+      <table class="away-team">
+        <tr>
+          <th align="left">Name:</th>
+          <th align="right">Points:</th>
+        </tr>
+        
+        <% @away_team.players.sort_by {|p| p.fullname}.each do |player| %>
+          <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+            <td><%= player.fullname %></td>
+            <td align="right"><%= player.points %></td>
+          </tr>
+        <% end %>
+        <tr class="total">
+          <td>Total:</td>
+          <td align="right"><%= "#{@away_team.players.sum('points')}" %></td>
+        </tr>
+      </table>
     </p>
   </fieldset>
 </fieldset>

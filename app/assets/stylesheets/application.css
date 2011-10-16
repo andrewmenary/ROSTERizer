@@ -11,6 +11,9 @@ fieldset {
 fieldset fieldset {
   width: auto;
 }
+fieldset table {
+  margin-left: 0.8em;
+}
 label {
   display: block;
   font-weight: bold;

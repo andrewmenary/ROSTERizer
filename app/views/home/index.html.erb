@@ -1,3 +1,13 @@
-<h1>Home</h1>
-<p>Welcome to the Rosterizer web application written in Ruby on Rails!</p>
-<%= link_to "Players", players_path %>
+<span id="pagename"><h1>Home</h1></span>
+
+<p>Welcome to ROSTERizer!</p>
+
+<p>This web application is designed to help you choose teams for your game of pick-up.
+To start, assuming the roster of eligible players is already installed in the system, simply
+choose <b>New Game</b> to begin.</p>
+
+<div id="subnav">
+  <%= link_to 'New Game', new_game_path %>
+  <%= link_to "Game", games_path %>
+  <%= link_to "Players", players_path %>
+</div>
