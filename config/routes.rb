@@ -1,4 +1,6 @@
 Rosterizer::Application.routes.draw do
+  get "home/about"
+
   resources :games
 
   #match 'players/availability' => 'players#availability'
