@@ -22,7 +22,7 @@
       <%= label_tag "players", "Players" %>
       <% @home_team.players.each do |player| %>
         <span class="field">
-          <%= player.fullname %><br />
+          <%= player.fullname %>  (<%= player.points %>)<br />
         </span>
       <% end %>
     </p>
@@ -41,7 +41,7 @@
       <%= label_tag "players", "Players" %>
       <% @away_team.players.each do |player| %>
         <span class="field">
-          <%= player.fullname %><br />
+          <%= player.fullname %>  (<%= player.points %>)<br />
         </span>
       <% end %>
     </p>
